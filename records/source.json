@@ -1,0 +1,293 @@
+{
+  "title": "丝绸跨标准检验的适用范围与原件补领",
+  "editions": [
+    {
+      "edition": "r1",
+      "streams": {
+        "orders": [
+          [
+            "A",
+            "OA",
+            "lot1",
+            "M3",
+            "wet",
+            "face",
+            "6"
+          ],
+          [
+            "B",
+            "OB",
+            "lot1",
+            "M1",
+            "wet",
+            "face",
+            "6"
+          ]
+        ],
+        "bindings": [
+          [
+            "L",
+            "R1",
+            "S",
+            "lot1",
+            "face"
+          ],
+          [
+            "Q",
+            "R1",
+            "S",
+            "lot1",
+            "back"
+          ]
+        ],
+        "tests": [
+          [
+            "L",
+            "R1",
+            "S",
+            "rep1",
+            "rub",
+            "M1",
+            "wet",
+            "4",
+            "raw1"
+          ],
+          [
+            "L",
+            "R1",
+            "S",
+            "rep1",
+            "tear",
+            "M1",
+            "wet",
+            "3",
+            "-"
+          ],
+          [
+            "Q",
+            "R1",
+            "S",
+            "rep9",
+            "rub",
+            "M3",
+            "wet",
+            "4",
+            "raw9"
+          ]
+        ],
+        "evidence": [
+          [
+            "raw1",
+            "rub",
+            "M1",
+            "wet"
+          ],
+          [
+            "raw9",
+            "rub",
+            "M3",
+            "wet"
+          ]
+        ],
+        "equiv": [
+          [
+            "A",
+            "M1",
+            "M2",
+            "wet",
+            "0",
+            "10"
+          ],
+          [
+            "A",
+            "M2",
+            "M3",
+            "dry",
+            "0",
+            "10"
+          ]
+        ],
+        "issued": [
+          [
+            "OB",
+            "rub",
+            "rep1",
+            "raw1"
+          ]
+        ]
+      }
+    },
+    {
+      "edition": "r2",
+      "streams": {
+        "orders": [
+          [
+            "A",
+            "OA",
+            "lot1",
+            "M3",
+            "wet",
+            "face",
+            "6"
+          ],
+          [
+            "B",
+            "OB",
+            "lot1",
+            "M1",
+            "wet",
+            "face",
+            "6"
+          ]
+        ],
+        "bindings": [
+          [
+            "L",
+            "R1",
+            "S",
+            "lot1",
+            "face"
+          ],
+          [
+            "Q",
+            "R1",
+            "S",
+            "lot1",
+            "back"
+          ]
+        ],
+        "tests": [
+          [
+            "L",
+            "R1",
+            "S",
+            "rep1",
+            "rub",
+            "M1",
+            "wet",
+            "4",
+            "raw1"
+          ],
+          [
+            "L",
+            "R1",
+            "S",
+            "rep1",
+            "tear",
+            "M1",
+            "wet",
+            "3",
+            "raw2"
+          ],
+          [
+            "Q",
+            "R1",
+            "S",
+            "rep9",
+            "rub",
+            "M3",
+            "wet",
+            "4",
+            "raw9"
+          ],
+          [
+            "L",
+            "R1",
+            "S",
+            "rep2",
+            "tear",
+            "M1",
+            "wet",
+            "3",
+            "raw3"
+          ]
+        ],
+        "evidence": [
+          [
+            "raw1",
+            "rub",
+            "M1",
+            "wet"
+          ],
+          [
+            "raw2",
+            "tear",
+            "M1",
+            "dry"
+          ],
+          [
+            "raw3",
+            "tear",
+            "M1",
+            "wet"
+          ],
+          [
+            "raw9",
+            "rub",
+            "M3",
+            "wet"
+          ]
+        ],
+        "equiv": [
+          [
+            "A",
+            "M1",
+            "M3",
+            "wet",
+            "5",
+            "10"
+          ],
+          [
+            "A",
+            "M2",
+            "M3",
+            "dry",
+            "0",
+            "10"
+          ]
+        ],
+        "issued": [
+          [
+            "OB",
+            "rub",
+            "rep1",
+            "raw1"
+          ]
+        ],
+        "corrected": [
+          [
+            "rep1",
+            "tear",
+            "rep2"
+          ]
+        ]
+      }
+    }
+  ],
+  "filters": {
+    "orders": {
+      "key": 0,
+      "clock": 6
+    },
+    "bindings": {
+      "key": 0
+    },
+    "tests": {
+      "key": 0
+    },
+    "evidence": {
+      "key": 0
+    },
+    "equiv": {
+      "key": 0,
+      "clock": 4
+    },
+    "issued": {
+      "key": 0
+    },
+    "corrected": {
+      "key": 0
+    }
+  },
+  "browser": false
+}
