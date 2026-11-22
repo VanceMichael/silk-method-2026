@@ -8,6 +8,7 @@
   },
   "scripts": {
     "source": "node source/source.mjs",
-    "test": "node --test"
+    "test": "node --test",
+    "provider": "node source/provider.mjs"
   }
 }

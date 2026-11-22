@@ -1,0 +1,129 @@
+{
+  "stages": {
+    "draft": [
+      {
+        "path": "/labpacks/manifest",
+        "body": {
+          "id": "K1",
+          "generation": "o1",
+          "members": [
+            {
+              "item": "耐受",
+              "path": "/labpacks/p1",
+              "sha256": "9862679fffce46e83d1671617c42dd5ccbb45773b0a2dcc79f1afb8db6779ceb"
+            }
+          ]
+        },
+        "query": {
+          "id": "K1"
+        }
+      },
+      {
+        "path": "/labpacks/p1",
+        "body": null,
+        "file": "silk-o1.csv"
+      },
+      {
+        "path": "/buyers/receipts",
+        "body": [
+          {
+            "order": "J1",
+            "item": "耐受",
+            "receipt": "T1",
+            "state": "confirmed"
+          }
+        ]
+      }
+    ],
+    "corrected": [
+      {
+        "path": "/labpacks/manifest",
+        "body": {
+          "id": "K1",
+          "generation": "o2",
+          "members": [
+            {
+              "item": "耐受",
+              "path": "/labpacks/p1",
+              "sha256": "a61d08dbfb1388ca54222fede0555b7e3a338078b30f0f90536e9c8fbcf0c305"
+            },
+            {
+              "item": "耐受",
+              "path": "/labpacks/back",
+              "sha256": "2121212121212121212121212121212121212121212121212121212121212121"
+            }
+          ]
+        },
+        "query": {
+          "id": "K1"
+        }
+      },
+      {
+        "path": "/labpacks/p1",
+        "body": null,
+        "file": "silk-o1.csv"
+      },
+      {
+        "path": "/labpacks/back",
+        "body": {
+          "error": "尚未出页"
+        },
+        "status": 425
+      },
+      {
+        "path": "/buyers/withdraw",
+        "body": {
+          "state": "pending"
+        },
+        "method": "POST",
+        "payload": {
+          "order": "J1",
+          "receipt": "T1"
+        },
+        "status": 202
+      },
+      {
+        "path": "/buyers/deliver",
+        "body": {
+          "error": "旧凭据仍在使用"
+        },
+        "method": "POST",
+        "payload": {
+          "order": "J1"
+        },
+        "status": 409
+      }
+    ],
+    "withdrawn": [
+      {
+        "path": "/labpacks/p1",
+        "body": null,
+        "file": "silk-o2.csv"
+      },
+      {
+        "path": "/buyers/receipts",
+        "body": [
+          {
+            "order": "J1",
+            "item": "耐受",
+            "receipt": "T1",
+            "state": "withdrawn"
+          }
+        ]
+      },
+      {
+        "path": "/buyers/deliver",
+        "body": {
+          "receipt": "T2"
+        },
+        "method": "POST",
+        "payload": {
+          "order": "J1",
+          "manifest": "o2"
+        },
+        "status": 201
+      }
+    ]
+  },
+  "common": []
+}

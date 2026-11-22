@@ -9,3 +9,5 @@ npm run source
 另开终端运行 `npm test` 可检查来源契约。测试以独立临时端口启动来源。
 
 两版业务记录和取件字段见 [资料格式](source/formats.md)。`POST /control?edition=r2` 模拟业务方更换当期资料，切回 `r1` 可重新查看初始来源。
+
+本地演练还提供单独的外部接口。用 `npm run provider` 启动，默认地址为 `http://127.0.0.1:8701`，可用 `PROVIDER_PORT` 调整。来源语义、操作回执和演练档见[外部接口](source/provider.md)。
