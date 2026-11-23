@@ -9,6 +9,7 @@
   "scripts": {
     "source": "node source/source.mjs",
     "test": "node --test",
-    "provider": "node source/provider.mjs"
+    "provider": "node source/provider.mjs",
+    "station": "node station/server.mjs"
   }
 }
